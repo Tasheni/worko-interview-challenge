@@ -1,0 +1,76 @@
+* {
+  font-family: 'DM Sans', sans-serif;
+}
+
+$color1: #FB088c;
+$color2: #212222;
+$color3: white;
+
+.footer-container {
+  background-color: #212222;
+  color: $color3;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
+  top: 80px;
+  position: relative;
+}
+
+.footer-column {
+  width: 48%;
+}
+
+.subscribe-form {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.subscribe-form label {
+  width: 100%;
+}
+
+.subscribe-form input[type="email"] {
+  margin-right: 10px;
+  margin-bottom: 10px;
+  color: $color3;
+  border: none;
+  background-color: $color2;
+  border-bottom: 1px solid $color3;
+  padding: 5px;
+  width: 100%;
+}
+
+
+
+
+.subscribe-form input[type="checkbox"] {
+  margin-right: 10px;
+  margin-bottom: 10px;
+  color: $color3;
+  border: none;
+  background-color: #212222;
+  border-bottom: 1px solid $color3;
+  padding: 5px;
+  width: 100%;
+}
+
+.subscribe-form button {
+  border: none;
+  color: $color3;
+  cursor: pointer;
+  padding: 5px 10px;
+  text-transform: uppercase;
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column-reverse;
+  }
+
+  .footer-column {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
